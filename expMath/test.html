@@ -1,3 +1,11 @@
+<script>
+import {exp.add} from 'expMath';
+import {exp.sub} from 'expMath';
+import {exp.mult} from 'expMath';
+import {exp.div} from 'expMath';
+import {exp.pow} from 'expMath';
+import {exp.root} from 'expMath';
+</script>
 <form name="input">
 a：<input type="var" name="vara" value=""><br>
 b：<input type="var" name="varb" value=""><br>
@@ -20,12 +28,6 @@ function select(){
 <input type="button" value="->" onclick="disp()"><br>
 </form>
 <script>
-import {exp.add} from 'expMath';
-import {exp.sub} from 'expMath';
-import {exp.mult} from 'expMath';
-import {exp.div} from 'expMath';
-import {exp.pow} from 'expMath';
-import {exp.root} from 'expMath';
 function disp(){
   var var1=document.input.vara.value;
   var var2=document.input.varb.value;
