@@ -1,10 +1,10 @@
 <form name="input">
-a：<input type="text" name="vara" value=""><br>
-b：<input type="text" name="varb" value=""><br>
+a：<input type="var" name="vara" value=""><br>
+b：<input type="var" name="varb" value=""><br>
 <script>
 function select(){
   var ope;
-  ope = document.input.select.operations.selectedIndex;
+  ope = document.select.operations.selectedIndex;
 }
 </script>
 <form name="select">
@@ -30,12 +30,12 @@ function disp(){
   var var1=document.input.vara.value;
   var var2=document.input.varb.value;
   var out;
-  if ope==0:{out=exp.add(var1,var2)};
-  if ope==1:{out=exp.sub(var1,var2)};
-  if ope==2:{out=exp.mult(var1,var2)};
-  if ope==3:{out=exp.div(var1,var2)};
-  if ope==4:{out=exp.pow(var1,var2)};
-  if ope==5:{out=exp.root(var1,var2)};
+  if ope==0:{out=exp.add(var1,var2);}
+  if ope==1:{out=exp.sub(var1,var2);}
+  if ope==2:{out=exp.mult(var1,var2);}
+  if ope==3:{out=exp.div(var1,var2);}
+  if ope==4:{out=exp.pow(var1,var2);}
+  if ope==5:{out=exp.root(var1,var2);}
   document.write(out);
 }
 </script>
