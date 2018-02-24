@@ -1,0 +1,41 @@
+<form name="input">
+a：<input type="text" name="vara" value=""><br>
+b：<input type="text" name="varb" value=""><br>script>
+<script>
+function select(){
+  var ope;
+  ope = document.input.select.operations.selectedIndex;
+}
+</script>
+<form name="select">
+<select name="operations" onchange="select()">
+  <option>+</option>
+  <option>-</option>
+  <option>*</option>
+  <option>/</option>
+  <option>^</option>
+  <option>root(a,b)</option>
+</select>
+</form>
+<input type="button" value="->" onclick="disp()"><br>
+</form>
+<script>
+import {exp.add} from 'expMath';
+import {exp.sub} from 'expMath';
+import {exp.mult} from 'expMath';
+import {exp.div} from 'expMath';
+import {exp.pow} from 'expMath';
+import {exp.root} from 'expMath';
+function disp(){
+  var var1=document.input.vara.value;
+  var var2=document.input.varb.value;
+  var out;
+  if ope==0:{out=exp.add(var1,var2)};
+  if ope==1:{out=exp.sub(var1,var2)};
+  if ope==2:{out=exp.mult(var1,var2)};
+  if ope==3:{out=exp.div(var1,var2)};
+  if ope==4:{out=exp.pow(var1,var2)};
+  if ope==5:{out=exp.root(var1,var2)};
+  document.write(ans);
+}
+</script>
