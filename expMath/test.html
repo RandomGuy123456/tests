@@ -1,6 +1,7 @@
 <script src="import.js" type="module"></script>
 <script>
-function disp(){
+function calc(){
+  var ope=document.input.operations.selectedIndex;
   var var1=document.input.vara.value;
   var var2=document.input.varb.value;
   var out;
@@ -16,21 +17,12 @@ function disp(){
 <form name="input">
 a：<input type="var" name="vara" value=""><br>
 b：<input type="var" name="varb" value=""><br>
-<script>
-function select(){
-  var ope;
-  ope = document.select.operations.selectedIndex;
-}
-</script>
-<form name="select">
-<select name="operations" onchange="select()">
+<select name="operations">
   <option>+</option>
   <option>-</option>
   <option>*</option>
   <option>/</option>
   <option>^</option>
   <option>root(a,b)</option>
-</select>
-</form>
-<input type="button" value="->" onclick="disp()"><br>
+<input type="button" value="->" onclick="calc()"><br>
 </form>
