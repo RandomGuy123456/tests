@@ -5,6 +5,18 @@ import {exp.mult} from 'expMath';
 import {exp.div} from 'expMath';
 import {exp.pow} from 'expMath';
 import {exp.root} from 'expMath';
+function disp(){
+  var var1=document.input.vara.value;
+  var var2=document.input.varb.value;
+  var out;
+  if ope==0:{out=exp.add(var1,var2);}
+  if ope==1:{out=exp.sub(var1,var2);}
+  if ope==2:{out=exp.mult(var1,var2);}
+  if ope==3:{out=exp.div(var1,var2);}
+  if ope==4:{out=exp.pow(var1,var2);}
+  if ope==5:{out=exp.root(var1,var2);}
+  document.write(out);
+}
 </script>
 <form name="input">
 a：<input type="var" name="vara" value=""><br>
@@ -27,17 +39,3 @@ function select(){
 </form>
 <input type="button" value="->" onclick="disp()"><br>
 </form>
-<script>
-function disp(){
-  var var1=document.input.vara.value;
-  var var2=document.input.varb.value;
-  var out;
-  if ope==0:{out=exp.add(var1,var2);}
-  if ope==1:{out=exp.sub(var1,var2);}
-  if ope==2:{out=exp.mult(var1,var2);}
-  if ope==3:{out=exp.div(var1,var2);}
-  if ope==4:{out=exp.pow(var1,var2);}
-  if ope==5:{out=exp.root(var1,var2);}
-  document.write(out);
-}
-</script>
