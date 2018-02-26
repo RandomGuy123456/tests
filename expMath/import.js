@@ -1,1 +1,1 @@
-import '/expMath.js';
+import 'expMath';
