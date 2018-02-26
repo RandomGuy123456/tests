@@ -5,16 +5,16 @@ function calc(){
   var var1=document.input.vara.value;
   var var2=document.input.varb.value;
   var out;
-  if (ope==0){out=var1+var2);}
+  if (ope==0){out=exp_add(var1,var2);}
   if (ope==1){out=exp_sub(var1,var2);}
   if (ope==2){out=exp_mult(var1,var2);}
   if (ope==3){out=exp_div(var1,var2);}
   if (ope==4){out=exp_pow(var1,var2);}
   if (ope==5){out=exp_root(var1,var2);}
-  document.open()
+  document.open();
   alert(out);
   document.writeIn(out);
-  documebt.close()
+  document.close();
 }
 </script>
 <form name="input">
