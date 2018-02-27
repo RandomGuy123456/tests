@@ -7,11 +7,11 @@
     var out;
     if (isFinite(var1)&&isFinite(var2)){
       if (ope==0){out=var1+var2;}
-      if (ope==1){out=exp_sub(var1,var2);}
-      if (ope==2){out=exp_mult(var1,var2);}
-      if (ope==3){out=exp_div(var1,var2);}
-      if (ope==4){out=exp_pow(var1,var2);}
-      if (ope==5){out=exp_root(var1,var2);}
+      if (ope==1){out=var1-var2);}
+      if (ope==2){out=var1*var2);}
+      if (ope==3){out=var1/var2);}
+      if (ope==4){out=Math.pow(var1,var2);}
+      if (ope==5){out=Math.sqrt(var1);}
     }else{
       out="Inputs must be number"
     }
@@ -27,7 +27,7 @@
     <option>*</option>
     <option>/</option>
     <option>^</option>
-    <option>root(a,b)</option>
+    <option>root(a)</option>
   <input type="button" value="->" onclick="calc()"><br>
 </form>
 <p id="output"></p>
